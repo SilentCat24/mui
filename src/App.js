@@ -1,17 +1,7 @@
-import {
-  Check,
-  Circle,
-  FiberManualRecord,
-  Shortcut,
-  South,
-} from "@mui/icons-material";
+import { Check } from "@mui/icons-material";
 import {
   Box,
   Button,
-  ButtonGroup,
-  Card,
-  CardActions,
-  CardContent,
   Stack,
   styled,
   Table,
@@ -71,7 +61,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
   // hide last border
   "&:last-child td, &:last-child th": {
-    border: 0,
+    border: 5,
   },
 }));
 
@@ -83,44 +73,94 @@ const rows = [
   createData(
     "Single User",
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />
   ),
   createData(
     "25 Document Free tos send for sign",
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />
   ),
   createData(
     "Basic Fields",
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />
   ),
   createData(
     "manage Contacts",
     <Check sx={{ display: "none" }} />,
     <Check
-      sx={{ backgroundColor: "#24a67c", padding: "5px", borderRadius: "35px" }}
+      sx={{
+        backgroundColor: "#24a67c",
+        padding: "5px",
+        borderRadius: "35px",
+        color: "white",
+      }}
     />,
     <Check sx={{ display: "none" }} />
   ),
@@ -169,8 +209,11 @@ function App() {
         <LeftBar />
       </Stack>
       {/* table */}
-      <TableContainer component={Paper} sx={{ alignItems: "center" }}>
-        <Table sx={{ minWidth: 400 }} aria-label="customized table">
+      <TableContainer component={Paper}>
+        <Table
+          sx={{ minWidth: 400, marginLeft: "5rem" }}
+          aria-label="customized table"
+        >
           <TableHead>
             <TableRow>
               <TableCell sx={{ fontWeight: "700", fontSize: "20px" }}>
